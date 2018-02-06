@@ -1,29 +1,24 @@
-//Aim of this bug bounty.......optimise this code and make it completely clean. There should be no WARNINGS and ERRORS on compiling.
 
-//compilatin: gcc bug_bounty.c
-
-
-#include <stdio>
-
+#include<bits/stdc++.h>
+using namespace std;
+long long int multiplyNumbers(int n);
 struct fact{
 	long long int x,n;
-}
-
-int f;
-
-int multiplyNumbers(obj.n)
-{
-    if (n >= 1)
-        return (n * multiplyNumbers(obj.n--)); 
+};
+struct fact obj;
+    long long int multiplyNumbers(int n)
+    {
+    if(n >=1)
+        return(n *multiplyNumbers(n-1));
     else
-    	return 2;
-
-bool main()
+    	return 1;
+    }
+int main()
 {
-	print("Enter the number whose factorial you want to enter: ");
-	fact obj;
-	scanf("%d %d",&x,&n);
-	obj.x=multiplyNumbers(obj.n);
-	print("obj.x");
-}
+	printf("Enter the number whose factorial you want to calculate: ");
 
+    scanf("%lld",&obj.n);
+	obj.x=multiplyNumbers(obj.n);
+	printf("%lld",obj.x);
+	return(0);
+}
